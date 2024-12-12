@@ -1,70 +1,125 @@
+@font-face {
+    font-family: fonte1;
+    src:url('assets/fonts/Figtree-VariableFont_wght.ttf') format(truetype);
+    font-family: fonte2;
+    src:url('assets/fonts/static/Figtree-ExtraBold.ttf') format(truetype);
+    font-family: fonte3;
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf) format(truetype);
+}
 body {
-    background-color: hsl(212, 45%, 89%);
-    display: flex;
     justify-content: center;
+    display: flex;
+    background-color: hsl(47, 88%, 63%);
     padding: 200px;
-    font-family:serif;
-    font-size: 12px;
-}
-#image {  
-    margin-top: 25px;
-    text-align: center;
-}
-img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    border-radius: 12px;
-    height: 300px;
-    width: auto;
-}
-h1 {
-    text-align: center;
-}
-p {
-    text-align: center;
-    font-size: 15px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
 }
 .container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    background: white;
-    height: 500px;
-    width: 330px;
+    border-radius: 24px;
+    background-color: hsl(0, 0%, 100%);
+    height: 550px;
+    width: 450px;
+    border: 2px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-size: 16px;
 }
-@media screen and (max-width: 770px) {
-    body {
-        background-color: hsl(212, 45%, 89%);
-        display:flex;
-        justify-content: center;
-        font-family:serif;
-        font-size: 30px;
-        padding: 0;
-        margin-top: 250px;
-    }
-    .container {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 25px;
-        background: white;
-        height: 1190px;
-        width: 900px;
-    }
-    #image {  
-        margin-top: 45px;
-        text-align: center;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-        border-radius: 12px;
-    }
-    img {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-        border-radius: 12px;
-        height: 700px;
-        width: auto;
-    }
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-        font-size: 40px;
-    }
+img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.image {
+    text-align: center;
+    margin-top: 21px;  
 }
     
+h1 {
+    font-family: fonte1;
+    margin-inline: 24px;
+    font-size: 26px;
+}
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+p {
+    margin-inline: 24px;
+    font-size: 16px;
+    font-family: fonte1;
+    font-style:normal;
+}
+#p {
+    color: hsl(0, 0%, 42%);
+}
+#published {
+    font-family: fonte3;
+    font-style: normal;
+}
+#learning {
+    margin-inline: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: hsl(47, 88%, 63%);
+    border-radius: 6px;
+    height: 20px;
+    width: 75px;
+    font-size: 16px;
+    font-family: fonte2;
+    align-items: flex-start;
+    
+ }
+ #img1 {
+    width: 90%;
+ }
+ #img2 {
+    width: 40px;
+    margin-inline: 24px;
+ }
+ #greg {
+    margin-top: -50px;
+    margin-inline: 55px;
+    font-size: 16px;
+    font-family: fonte2;
+ }
+@media (max-width:450px) {
+    body {
+        padding: 0;
+        margin: 300px auto;
+    }
+    .container {
+        height: 1150px;
+        width: 850px;
+        font-size: 20px;
+        border: 4px solid black;
+        border-right: 20px solid black;
+        border-bottom: 20px solid black;
+        border-radius: 46px;
+    }
+    #img1 {
+        width: 90%;
+    }
+    h1{
+        margin-inline: 50px;
+        font-size: 60px;
+    }
+    h3, p {
+        margin-inline: 50px;
+        font-size: 40px;
+    }
+    h2 {
+        font-size:40px;
+    }
+    #learning{
+        margin-inline: 50px;
+        height: 50px;
+        width: 185px;
+    }
+    #img2 {
+        margin-inline: 50px;
+        width: 80px;
+    }
+    #greg {
+        margin-top: -105px;
+        margin-inline: 120px;
+    }
+}
