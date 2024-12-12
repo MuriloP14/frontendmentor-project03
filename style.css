@@ -81,7 +81,7 @@ p {
     font-size: 16px;
     font-family: fonte2;
  }
-@media (max-width:450px) {
+@media (max-width:750px) {
     body {
         padding: 0;
         margin: 300px auto;
